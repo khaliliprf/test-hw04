@@ -23,6 +23,9 @@ class Equivalence {
     this.gates = gates;
     this.outputs = outputs;
     this.inputs = inputs;
+    console.log("gates:", gates.length);
+    console.log("inputs:", Object.keys(inputs).length);
+    console.log("outputs:", Object.keys(outputs).length);
   }
 
   visit(net) {
@@ -45,6 +48,7 @@ class Equivalence {
   }
 
   and(inputs, output) {
+    let added = false;
     for (let i = 0; i < inputs.length; i++) {
       const stuckAtOneFault = inputs[i] + "-sa1";
 
@@ -52,12 +56,15 @@ class Equivalence {
       this.remainingFaults[stuckAtOneFault] =
         (this.remainingFaults[stuckAtOneFault] || 0) + 1;
 
+      if (this.remainingFaults[inputs[i] + "-sa0"]) added = true;
+
       this.visit(inputs[i]);
     }
 
     // add one of inputs sa0 fault
-    this.remainingFaults[inputs[0] + "-sa0"] =
-      (this.remainingFaults[inputs[0] + "-sa0"] || 0) + 1;
+    if (!added)
+      this.remainingFaults[inputs[0] + "-sa0"] =
+        (this.remainingFaults[inputs[0] + "-sa0"] || 0) + 1;
 
     // remove output sa0 if exist
     if (this.remainingFaults[output + "-sa0"]) {
@@ -67,25 +74,31 @@ class Equivalence {
     }
 
     // add sa1 fault for output if previously not visited
-    if (!this.visitedInputs[output])
+    if (!this.visitedInputs[output]) {
       this.remainingFaults[output + "-sa1"] =
         (this.remainingFaults[output + "-sa1"] || 0) + 1;
+      // this.visitedInputs[output] = (this.visitedInputs[output] || 0) + 1;
+    }
     return;
   }
 
   or(inputs, output) {
+    let added = false;
     for (let i = 0; i < inputs.length; i++) {
       const stuckAtZeroFault = inputs[i] + "-sa0";
 
       this.remainingFaults[stuckAtZeroFault] =
         (this.remainingFaults[stuckAtZeroFault] || 0) + 1;
 
+      if (this.remainingFaults[inputs[i] + "-sa1"]) added = true;
+
       this.visit(inputs[i]);
     }
 
     // add one of inputs sa1 fault
-    this.remainingFaults[inputs[0] + "-sa1"] =
-      (this.remainingFaults[inputs[0] + "-sa1"] || 0) + 1;
+    if (!added)
+      this.remainingFaults[inputs[0] + "-sa1"] =
+        (this.remainingFaults[inputs[0] + "-sa1"] || 0) + 1;
 
     if (this.remainingFaults[output + "-sa1"]) {
       this.remainingFaults[output + "-sa1"] -= 1;
@@ -94,24 +107,32 @@ class Equivalence {
       }
     }
 
-    if (!this.visitedInputs[output])
+    if (!this.visitedInputs[output]) {
       this.remainingFaults[output + "-sa0"] =
         (this.remainingFaults[output + "-sa0"] || 0) + 1;
+
+      // this.visitedInputs[output] = (this.visitedInputs[output] || 0) + 1;
+    }
+
     return;
   }
 
   nand(inputs, output) {
+    let added = false;
     for (let i = 0; i < inputs.length; i++) {
       const stuckAtOneFault = inputs[i] + "-sa1";
 
       this.remainingFaults[stuckAtOneFault] =
         (this.remainingFaults[stuckAtOneFault] || 0) + 1;
 
+      if (this.remainingFaults[inputs[i] + "-sa0"]) added = true;
+
       this.visit(inputs[i]);
     }
 
-    this.remainingFaults[inputs[0] + "-sa0"] =
-      (this.remainingFaults[inputs[0] + "-sa0"] || 0) + 1;
+    if (!added)
+      this.remainingFaults[inputs[0] + "-sa0"] =
+        (this.remainingFaults[inputs[0] + "-sa0"] || 0) + 1;
 
     if (this.remainingFaults[output + "-sa1"]) {
       this.remainingFaults[output + "-sa1"] -= 1;
@@ -120,24 +141,31 @@ class Equivalence {
       }
     }
 
-    if (!this.visitedInputs[output])
+    if (!this.visitedInputs[output]) {
       this.remainingFaults[output + "-sa0"] =
         (this.remainingFaults[output + "-sa0"] || 0) + 1;
+      // this.visitedInputs[output] = (this.visitedInputs[output] || 0) + 1;
+    }
+
     return;
   }
 
   nor(inputs, output) {
+    let added = false;
     for (let i = 0; i < inputs.length; i++) {
       const stuckAtZeroFault = inputs[i] + "-sa0";
 
       this.remainingFaults[stuckAtZeroFault] =
         (this.remainingFaults[stuckAtZeroFault] || 0) + 1;
 
+      if (this.remainingFaults[inputs[0] + "-sa1"]) added = true;
+
       this.visit(inputs[i]);
     }
 
-    this.remainingFaults[inputs[0] + "-sa1"] =
-      (this.remainingFaults[inputs[0] + "-sa1"] || 0) + 1;
+    if (!added)
+      this.remainingFaults[inputs[0] + "-sa1"] =
+        (this.remainingFaults[inputs[0] + "-sa1"] || 0) + 1;
 
     if (this.remainingFaults[output + "-sa0"]) {
       this.remainingFaults[output + "-sa0"] -= 1;
@@ -146,9 +174,55 @@ class Equivalence {
       }
     }
 
-    if (!this.visitedInputs[output])
+    if (!this.visitedInputs[output]) {
       this.remainingFaults[output + "-sa1"] =
         (this.remainingFaults[output + "-sa1"] || 0) + 1;
+      // this.visitedInputs[output] = (this.visitedInputs[output] || 0) + 1;
+    }
+    return;
+  }
+
+  xor(inputs, output) {
+    for (let i = 0; i < inputs.length; i++) {
+      const stuckAtZeroFault = inputs[i] + "-sa0";
+      const stuckAtOneFault = inputs[i] + "-sa1";
+
+      this.remainingFaults[stuckAtOneFault] =
+        (this.remainingFaults[stuckAtOneFault] || 0) + 1;
+
+      this.remainingFaults[stuckAtZeroFault] =
+        (this.remainingFaults[stuckAtZeroFault] || 0) + 1;
+
+      this.visit(inputs[i]);
+    }
+
+    // if (this.remainingFaults[output + "-sa0"]) {
+    //   console.log("------------------------------");
+    //   this.remainingFaults[output + "-sa0"] -= 1;
+    //   if (this.remainingFaults[output + "-sa0"] === 0) {
+    //     delete this.remainingFaults[output + "-sa0"];
+    //   }
+    // }
+
+    // if (this.remainingFaults[output + "-sa1"]) {
+    //   this.remainingFaults[output + "-sa1"] -= 1;
+    //   if (this.remainingFaults[output + "-sa1"] === 0) {
+    //     delete this.remainingFaults[output + "-sa1"];
+    //   }
+    // }
+
+    if (!this.visitedInputs[output]) {
+      console.log("------------------------------xor: not visited output");
+
+      this.remainingFaults[output + "-sa1"] =
+        (this.remainingFaults[output + "-sa1"] || 0) + 1;
+
+      this.remainingFaults[output + "-sa0"] =
+        (this.remainingFaults[output + "-sa0"] || 0) + 1;
+
+      // this.visitedInputs[output] = (this.visitedInputs[output] || 0) + 1;
+    }
+
     return;
   }
 
@@ -160,9 +234,26 @@ class Equivalence {
       this.remainingFaults[stuckAtZeroFault] =
         (this.remainingFaults[stuckAtZeroFault] || 0) + 1;
 
+      if (
+        this.visitedInputs[output] &&
+        !this.remainingFaults[output + "-sa0"]
+      ) {
+        this.remainingFaults[stuckAtZeroFault] -= 1;
+        if (this.remainingFaults[stuckAtZeroFault] === 0)
+          delete this.remainingFaults[stuckAtZeroFault];
+      }
+
       this.remainingFaults[stuckAtOneFault] =
         (this.remainingFaults[stuckAtOneFault] || 0) + 1;
 
+      if (
+        this.visitedInputs[output] &&
+        !this.remainingFaults[output + "-sa1"]
+      ) {
+        this.remainingFaults[stuckAtOneFault] -= 1;
+        if (this.remainingFaults[stuckAtOneFault] === 0)
+          delete this.remainingFaults[stuckAtOneFault];
+      }
       this.visit(inputs[i]);
     }
 
@@ -191,9 +282,26 @@ class Equivalence {
       this.remainingFaults[stuckAtZeroFault] =
         (this.remainingFaults[stuckAtZeroFault] || 0) + 1;
 
+      if (
+        this.visitedInputs[output] &&
+        !this.remainingFaults[output + "-sa1"]
+      ) {
+        this.remainingFaults[stuckAtZeroFault] -= 1;
+        if (this.remainingFaults[stuckAtZeroFault] === 0)
+          delete this.remainingFaults[stuckAtZeroFault];
+      }
+
       this.remainingFaults[stuckAtOneFault] =
         (this.remainingFaults[stuckAtOneFault] || 0) + 1;
 
+      if (
+        this.visitedInputs[output] &&
+        !this.remainingFaults[output + "-sa0"]
+      ) {
+        this.remainingFaults[stuckAtOneFault] -= 1;
+        if (this.remainingFaults[stuckAtOneFault] === 0)
+          delete this.remainingFaults[stuckAtOneFault];
+      }
       this.visit(inputs[i]);
     }
 
@@ -214,36 +322,12 @@ class Equivalence {
     return;
   }
 
-  //   xor(inputs) {
-  //     // for (let i = 0; i < inputs.length; i++) {
-  //     //   const stuckAtZeroFault = inputs[i] + "-sa0";
-  //     //   const stuckAtOneFault = inputs[i] + "-sa1";
-
-  //     //   this.remainingFaults[stuckAtZeroFault] = 1;
-  //     //   this.remainingFaults[stuckAtOneFault] = 1;
-  //     // }
-  //     return;
-  //   }
-
   addToTotal(nets) {
     for (const net of nets) {
       const stemStuckAtZero = net + "-sa0";
       const stemStuckAtOne = net + "-sa1";
 
       this.totalNet.push(stemStuckAtZero, stemStuckAtOne);
-
-      // if (this.visitedInputs[net] && this.visitedInputs[net] === 1) {
-      //   console.log(this.visitedInputs[net]);
-      //   this.fanouts[net] = true;
-      //   // this.remainingFaults[stemStuckAtZero] =
-      //   //   (this.remainingFaults[stemStuckAtZero] || 0) + 1;
-      //   // this.remainingFaults[stemStuckAtOne] =
-      //   //   (this.remainingFaults[stemStuckAtOne] || 0) + 1;
-
-      //   continue;
-      // }
-
-      // this.visitedInputs[net] = (this.visitedInputs[net] || 0) + 1;
     }
     return;
   }
@@ -286,9 +370,16 @@ class Equivalence {
 
     for (let i = levelCounts - 1; i >= 0; i--) {
       const gates = levels[i];
-      console.log('level: ',i,gates.length);
 
       for (const gate of gates) {
+        console.log(
+          "level: ",
+          i,
+          gates.length,
+          gate.type,
+          gate.inputs,
+          gate.output
+        );
         this[gate.type](gate.inputs, gate.output);
         this.addToTotal(gate.inputs);
       }
@@ -322,23 +413,27 @@ class Equivalence {
 //   c17.outputs
 //   c17.inputs
 // ).collapseRatio();
-// const equivalenceCollapseRationC432 = new Equivalence(
-//   c432.gates,
-//   c432.outputs
-//   c432.inputs
-// ).collapseRatio();
+
+const equivalenceCollapseRationC432 = new Equivalence(
+  c432.gates,
+  c432.outputs,
+  c432.inputs
+).collapseRatio();
+console.log({ equivalenceCollapseRationC432 });
+
 // const equivalenceCollapseRationC499 = new Equivalence(
 //   c499.gates,
-//   c499.outputs
+//   c499.outputs,
 //   c499.inputs
 // ).collapseRatio();
+// console.log({ equivalenceCollapseRationC499 });
 
-const equivalenceCollapseRationC880 = new Equivalence(
-  c880.gates,
-  c880.outputs,
-  c880.inputs
-).collapseRatio();
-console.log({ equivalenceCollapseRationC880 });
+// const equivalenceCollapseRationC880 = new Equivalence(
+//   c880.gates,
+//   c880.outputs,
+//   c880.inputs
+// ).collapseRatio();
+// console.log({ equivalenceCollapseRationC880 });
 
 // const equivalenceCollapseRationC1908 = new Equivalence(
 //   c1908.gates,
@@ -369,16 +464,16 @@ console.log({ equivalenceCollapseRationC880 });
 
 // console.table(1 ,2 ,3 ,4 );
 
-const equivalenceCollapseRationa = new Equivalence(
-  a.gates,
-  a.outputs,
-  a.inputs
-).collapseRatio();
-console.log({ equivalenceCollapseRationa });
+// const equivalenceCollapseRationa = new Equivalence(
+//   a.gates,
+//   a.outputs,
+//   a.inputs
+// ).collapseRatio();
+// console.log({ equivalenceCollapseRationa });
 
-const equivalenceCollapseRationB = new Equivalence(
-  b.gates,
-  b.outputs,
-  b.inputs
-).collapseRatio();
-console.log({ equivalenceCollapseRationB });
+// const equivalenceCollapseRationB = new Equivalence(
+//   b.gates,
+//   b.outputs,
+//   b.inputs
+// ).collapseRatio();
+// console.log({ equivalenceCollapseRationB });
