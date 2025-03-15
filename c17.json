@@ -1,0 +1,70 @@
+{
+    "gates": [
+        {
+            "name": "NAND2_1",
+            "type": "nand",
+            "inputs": [
+                "N1",
+                "N3"
+            ],
+            "output": "N10"
+        },
+        {
+            "name": "NAND2_2",
+            "type": "nand",
+            "inputs": [
+                "N3",
+                "N6"
+            ],
+            "output": "N11"
+        },
+        {
+            "name": "NAND2_3",
+            "type": "nand",
+            "inputs": [
+                "N2",
+                "N11"
+            ],
+            "output": "N16"
+        },
+        {
+            "name": "NAND2_4",
+            "type": "nand",
+            "inputs": [
+                "N11",
+                "N7"
+            ],
+            "output": "N19"
+        },
+        {
+            "name": "NAND2_5",
+            "type": "nand",
+            "inputs": [
+                "N10",
+                "N16"
+            ],
+            "output": "N22"
+        },
+        {
+            "name": "NAND2_6",
+            "type": "nand",
+            "inputs": [
+                "N16",
+                "N19"
+            ],
+            "output": "N23"
+        }
+    ],
+    "inputs": {
+        "N1": true,
+        "N2": true,
+        "N3": true,
+        "N6": true,
+        "N7": true
+    },
+    "outputs": [
+        "N22",
+        "N23"
+    ],
+    "moduleName": "c17"
+}

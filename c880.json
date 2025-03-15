@@ -1,0 +1,3505 @@
+{
+    "gates": [
+        {
+            "name": "NAND4_1",
+            "type": "nand",
+            "inputs": [
+                "N1",
+                "N8",
+                "N13",
+                "N17"
+            ],
+            "output": "N269"
+        },
+        {
+            "name": "NAND4_2",
+            "type": "nand",
+            "inputs": [
+                "N1",
+                "N26",
+                "N13",
+                "N17"
+            ],
+            "output": "N270"
+        },
+        {
+            "name": "AND3_3",
+            "type": "and",
+            "inputs": [
+                "N29",
+                "N36",
+                "N42"
+            ],
+            "output": "N273"
+        },
+        {
+            "name": "AND3_4",
+            "type": "and",
+            "inputs": [
+                "N1",
+                "N26",
+                "N51"
+            ],
+            "output": "N276"
+        },
+        {
+            "name": "NAND4_5",
+            "type": "nand",
+            "inputs": [
+                "N1",
+                "N8",
+                "N51",
+                "N17"
+            ],
+            "output": "N279"
+        },
+        {
+            "name": "NAND4_6",
+            "type": "nand",
+            "inputs": [
+                "N1",
+                "N8",
+                "N13",
+                "N55"
+            ],
+            "output": "N280"
+        },
+        {
+            "name": "NAND4_7",
+            "type": "nand",
+            "inputs": [
+                "N59",
+                "N42",
+                "N68",
+                "N72"
+            ],
+            "output": "N284"
+        },
+        {
+            "name": "NAND2_8",
+            "type": "nand",
+            "inputs": [
+                "N29",
+                "N68"
+            ],
+            "output": "N285"
+        },
+        {
+            "name": "NAND3_9",
+            "type": "nand",
+            "inputs": [
+                "N59",
+                "N68",
+                "N74"
+            ],
+            "output": "N286"
+        },
+        {
+            "name": "AND3_10",
+            "type": "and",
+            "inputs": [
+                "N29",
+                "N75",
+                "N80"
+            ],
+            "output": "N287"
+        },
+        {
+            "name": "AND3_11",
+            "type": "and",
+            "inputs": [
+                "N29",
+                "N75",
+                "N42"
+            ],
+            "output": "N290"
+        },
+        {
+            "name": "AND3_12",
+            "type": "and",
+            "inputs": [
+                "N29",
+                "N36",
+                "N80"
+            ],
+            "output": "N291"
+        },
+        {
+            "name": "AND3_13",
+            "type": "and",
+            "inputs": [
+                "N29",
+                "N36",
+                "N42"
+            ],
+            "output": "N292"
+        },
+        {
+            "name": "AND3_14",
+            "type": "and",
+            "inputs": [
+                "N59",
+                "N75",
+                "N80"
+            ],
+            "output": "N293"
+        },
+        {
+            "name": "AND3_15",
+            "type": "and",
+            "inputs": [
+                "N59",
+                "N75",
+                "N42"
+            ],
+            "output": "N294"
+        },
+        {
+            "name": "AND3_16",
+            "type": "and",
+            "inputs": [
+                "N59",
+                "N36",
+                "N80"
+            ],
+            "output": "N295"
+        },
+        {
+            "name": "AND3_17",
+            "type": "and",
+            "inputs": [
+                "N59",
+                "N36",
+                "N42"
+            ],
+            "output": "N296"
+        },
+        {
+            "name": "AND2_18",
+            "type": "and",
+            "inputs": [
+                "N85",
+                "N86"
+            ],
+            "output": "N297"
+        },
+        {
+            "name": "OR2_19",
+            "type": "or",
+            "inputs": [
+                "N87",
+                "N88"
+            ],
+            "output": "N298"
+        },
+        {
+            "name": "NAND2_20",
+            "type": "nand",
+            "inputs": [
+                "N91",
+                "N96"
+            ],
+            "output": "N301"
+        },
+        {
+            "name": "OR2_21",
+            "type": "or",
+            "inputs": [
+                "N91",
+                "N96"
+            ],
+            "output": "N302"
+        },
+        {
+            "name": "NAND2_22",
+            "type": "nand",
+            "inputs": [
+                "N101",
+                "N106"
+            ],
+            "output": "N303"
+        },
+        {
+            "name": "OR2_23",
+            "type": "or",
+            "inputs": [
+                "N101",
+                "N106"
+            ],
+            "output": "N304"
+        },
+        {
+            "name": "NAND2_24",
+            "type": "nand",
+            "inputs": [
+                "N111",
+                "N116"
+            ],
+            "output": "N305"
+        },
+        {
+            "name": "OR2_25",
+            "type": "or",
+            "inputs": [
+                "N111",
+                "N116"
+            ],
+            "output": "N306"
+        },
+        {
+            "name": "NAND2_26",
+            "type": "nand",
+            "inputs": [
+                "N121",
+                "N126"
+            ],
+            "output": "N307"
+        },
+        {
+            "name": "OR2_27",
+            "type": "or",
+            "inputs": [
+                "N121",
+                "N126"
+            ],
+            "output": "N308"
+        },
+        {
+            "name": "AND2_28",
+            "type": "and",
+            "inputs": [
+                "N8",
+                "N138"
+            ],
+            "output": "N309"
+        },
+        {
+            "name": "NOT1_29",
+            "type": "not",
+            "inputs": [
+                "N268"
+            ],
+            "output": "N310"
+        },
+        {
+            "name": "AND2_30",
+            "type": "and",
+            "inputs": [
+                "N51",
+                "N138"
+            ],
+            "output": "N316"
+        },
+        {
+            "name": "AND2_31",
+            "type": "and",
+            "inputs": [
+                "N17",
+                "N138"
+            ],
+            "output": "N317"
+        },
+        {
+            "name": "AND2_32",
+            "type": "and",
+            "inputs": [
+                "N152",
+                "N138"
+            ],
+            "output": "N318"
+        },
+        {
+            "name": "NAND2_33",
+            "type": "nand",
+            "inputs": [
+                "N59",
+                "N156"
+            ],
+            "output": "N319"
+        },
+        {
+            "name": "NOR2_34",
+            "type": "nor",
+            "inputs": [
+                "N17",
+                "N42"
+            ],
+            "output": "N322"
+        },
+        {
+            "name": "AND2_35",
+            "type": "and",
+            "inputs": [
+                "N17",
+                "N42"
+            ],
+            "output": "N323"
+        },
+        {
+            "name": "NAND2_36",
+            "type": "nand",
+            "inputs": [
+                "N159",
+                "N165"
+            ],
+            "output": "N324"
+        },
+        {
+            "name": "OR2_37",
+            "type": "or",
+            "inputs": [
+                "N159",
+                "N165"
+            ],
+            "output": "N325"
+        },
+        {
+            "name": "NAND2_38",
+            "type": "nand",
+            "inputs": [
+                "N171",
+                "N177"
+            ],
+            "output": "N326"
+        },
+        {
+            "name": "OR2_39",
+            "type": "or",
+            "inputs": [
+                "N171",
+                "N177"
+            ],
+            "output": "N327"
+        },
+        {
+            "name": "NAND2_40",
+            "type": "nand",
+            "inputs": [
+                "N183",
+                "N189"
+            ],
+            "output": "N328"
+        },
+        {
+            "name": "OR2_41",
+            "type": "or",
+            "inputs": [
+                "N183",
+                "N189"
+            ],
+            "output": "N329"
+        },
+        {
+            "name": "NAND2_42",
+            "type": "nand",
+            "inputs": [
+                "N195",
+                "N201"
+            ],
+            "output": "N330"
+        },
+        {
+            "name": "OR2_43",
+            "type": "or",
+            "inputs": [
+                "N195",
+                "N201"
+            ],
+            "output": "N331"
+        },
+        {
+            "name": "AND2_44",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N91"
+            ],
+            "output": "N332"
+        },
+        {
+            "name": "AND2_45",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N96"
+            ],
+            "output": "N333"
+        },
+        {
+            "name": "AND2_46",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N101"
+            ],
+            "output": "N334"
+        },
+        {
+            "name": "AND2_47",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N106"
+            ],
+            "output": "N335"
+        },
+        {
+            "name": "AND2_48",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N111"
+            ],
+            "output": "N336"
+        },
+        {
+            "name": "AND2_49",
+            "type": "and",
+            "inputs": [
+                "N255",
+                "N259"
+            ],
+            "output": "N337"
+        },
+        {
+            "name": "AND2_50",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N116"
+            ],
+            "output": "N338"
+        },
+        {
+            "name": "AND2_51",
+            "type": "and",
+            "inputs": [
+                "N255",
+                "N260"
+            ],
+            "output": "N339"
+        },
+        {
+            "name": "AND2_52",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N121"
+            ],
+            "output": "N340"
+        },
+        {
+            "name": "AND2_53",
+            "type": "and",
+            "inputs": [
+                "N255",
+                "N267"
+            ],
+            "output": "N341"
+        },
+        {
+            "name": "NOT1_54",
+            "type": "not",
+            "inputs": [
+                "N269"
+            ],
+            "output": "N342"
+        },
+        {
+            "name": "NOT1_55",
+            "type": "not",
+            "inputs": [
+                "N273"
+            ],
+            "output": "N343"
+        },
+        {
+            "name": "OR2_56",
+            "type": "or",
+            "inputs": [
+                "N270",
+                "N273"
+            ],
+            "output": "N344"
+        },
+        {
+            "name": "NOT1_57",
+            "type": "not",
+            "inputs": [
+                "N276"
+            ],
+            "output": "N345"
+        },
+        {
+            "name": "NOT1_58",
+            "type": "not",
+            "inputs": [
+                "N276"
+            ],
+            "output": "N346"
+        },
+        {
+            "name": "NOT1_59",
+            "type": "not",
+            "inputs": [
+                "N279"
+            ],
+            "output": "N347"
+        },
+        {
+            "name": "NOR2_60",
+            "type": "nor",
+            "inputs": [
+                "N280",
+                "N284"
+            ],
+            "output": "N348"
+        },
+        {
+            "name": "OR2_61",
+            "type": "or",
+            "inputs": [
+                "N280",
+                "N285"
+            ],
+            "output": "N349"
+        },
+        {
+            "name": "OR2_62",
+            "type": "or",
+            "inputs": [
+                "N280",
+                "N286"
+            ],
+            "output": "N350"
+        },
+        {
+            "name": "NOT1_63",
+            "type": "not",
+            "inputs": [
+                "N293"
+            ],
+            "output": "N351"
+        },
+        {
+            "name": "NOT1_64",
+            "type": "not",
+            "inputs": [
+                "N294"
+            ],
+            "output": "N352"
+        },
+        {
+            "name": "NOT1_65",
+            "type": "not",
+            "inputs": [
+                "N295"
+            ],
+            "output": "N353"
+        },
+        {
+            "name": "NOT1_66",
+            "type": "not",
+            "inputs": [
+                "N296"
+            ],
+            "output": "N354"
+        },
+        {
+            "name": "NAND2_67",
+            "type": "nand",
+            "inputs": [
+                "N89",
+                "N298"
+            ],
+            "output": "N355"
+        },
+        {
+            "name": "AND2_68",
+            "type": "and",
+            "inputs": [
+                "N90",
+                "N298"
+            ],
+            "output": "N356"
+        },
+        {
+            "name": "NAND2_69",
+            "type": "nand",
+            "inputs": [
+                "N301",
+                "N302"
+            ],
+            "output": "N357"
+        },
+        {
+            "name": "NAND2_70",
+            "type": "nand",
+            "inputs": [
+                "N303",
+                "N304"
+            ],
+            "output": "N360"
+        },
+        {
+            "name": "NAND2_71",
+            "type": "nand",
+            "inputs": [
+                "N305",
+                "N306"
+            ],
+            "output": "N363"
+        },
+        {
+            "name": "NAND2_72",
+            "type": "nand",
+            "inputs": [
+                "N307",
+                "N308"
+            ],
+            "output": "N366"
+        },
+        {
+            "name": "NOT1_73",
+            "type": "not",
+            "inputs": [
+                "N310"
+            ],
+            "output": "N369"
+        },
+        {
+            "name": "NOR2_74",
+            "type": "nor",
+            "inputs": [
+                "N322",
+                "N323"
+            ],
+            "output": "N375"
+        },
+        {
+            "name": "NAND2_75",
+            "type": "nand",
+            "inputs": [
+                "N324",
+                "N325"
+            ],
+            "output": "N376"
+        },
+        {
+            "name": "NAND2_76",
+            "type": "nand",
+            "inputs": [
+                "N326",
+                "N327"
+            ],
+            "output": "N379"
+        },
+        {
+            "name": "NAND2_77",
+            "type": "nand",
+            "inputs": [
+                "N328",
+                "N329"
+            ],
+            "output": "N382"
+        },
+        {
+            "name": "NAND2_78",
+            "type": "nand",
+            "inputs": [
+                "N330",
+                "N331"
+            ],
+            "output": "N385"
+        },
+        {
+            "name": "BUFF1_79",
+            "type": "buf",
+            "inputs": [
+                "N290"
+            ],
+            "output": "N388"
+        },
+        {
+            "name": "BUFF1_80",
+            "type": "buf",
+            "inputs": [
+                "N291"
+            ],
+            "output": "N389"
+        },
+        {
+            "name": "BUFF1_81",
+            "type": "buf",
+            "inputs": [
+                "N292"
+            ],
+            "output": "N390"
+        },
+        {
+            "name": "BUFF1_82",
+            "type": "buf",
+            "inputs": [
+                "N297"
+            ],
+            "output": "N391"
+        },
+        {
+            "name": "OR2_83",
+            "type": "or",
+            "inputs": [
+                "N270",
+                "N343"
+            ],
+            "output": "N392"
+        },
+        {
+            "name": "NOT1_84",
+            "type": "not",
+            "inputs": [
+                "N345"
+            ],
+            "output": "N393"
+        },
+        {
+            "name": "NOT1_85",
+            "type": "not",
+            "inputs": [
+                "N346"
+            ],
+            "output": "N399"
+        },
+        {
+            "name": "AND2_86",
+            "type": "and",
+            "inputs": [
+                "N348",
+                "N73"
+            ],
+            "output": "N400"
+        },
+        {
+            "name": "NOT1_87",
+            "type": "not",
+            "inputs": [
+                "N349"
+            ],
+            "output": "N401"
+        },
+        {
+            "name": "NOT1_88",
+            "type": "not",
+            "inputs": [
+                "N350"
+            ],
+            "output": "N402"
+        },
+        {
+            "name": "NOT1_89",
+            "type": "not",
+            "inputs": [
+                "N355"
+            ],
+            "output": "N403"
+        },
+        {
+            "name": "NOT1_90",
+            "type": "not",
+            "inputs": [
+                "N357"
+            ],
+            "output": "N404"
+        },
+        {
+            "name": "NOT1_91",
+            "type": "not",
+            "inputs": [
+                "N360"
+            ],
+            "output": "N405"
+        },
+        {
+            "name": "AND2_92",
+            "type": "and",
+            "inputs": [
+                "N357",
+                "N360"
+            ],
+            "output": "N406"
+        },
+        {
+            "name": "NOT1_93",
+            "type": "not",
+            "inputs": [
+                "N363"
+            ],
+            "output": "N407"
+        },
+        {
+            "name": "NOT1_94",
+            "type": "not",
+            "inputs": [
+                "N366"
+            ],
+            "output": "N408"
+        },
+        {
+            "name": "AND2_95",
+            "type": "and",
+            "inputs": [
+                "N363",
+                "N366"
+            ],
+            "output": "N409"
+        },
+        {
+            "name": "NAND2_96",
+            "type": "nand",
+            "inputs": [
+                "N347",
+                "N352"
+            ],
+            "output": "N410"
+        },
+        {
+            "name": "NOT1_97",
+            "type": "not",
+            "inputs": [
+                "N376"
+            ],
+            "output": "N411"
+        },
+        {
+            "name": "NOT1_98",
+            "type": "not",
+            "inputs": [
+                "N379"
+            ],
+            "output": "N412"
+        },
+        {
+            "name": "AND2_99",
+            "type": "and",
+            "inputs": [
+                "N376",
+                "N379"
+            ],
+            "output": "N413"
+        },
+        {
+            "name": "NOT1_100",
+            "type": "not",
+            "inputs": [
+                "N382"
+            ],
+            "output": "N414"
+        },
+        {
+            "name": "NOT1_101",
+            "type": "not",
+            "inputs": [
+                "N385"
+            ],
+            "output": "N415"
+        },
+        {
+            "name": "AND2_102",
+            "type": "and",
+            "inputs": [
+                "N382",
+                "N385"
+            ],
+            "output": "N416"
+        },
+        {
+            "name": "AND2_103",
+            "type": "and",
+            "inputs": [
+                "N210",
+                "N369"
+            ],
+            "output": "N417"
+        },
+        {
+            "name": "BUFF1_104",
+            "type": "buf",
+            "inputs": [
+                "N342"
+            ],
+            "output": "N418"
+        },
+        {
+            "name": "BUFF1_105",
+            "type": "buf",
+            "inputs": [
+                "N344"
+            ],
+            "output": "N419"
+        },
+        {
+            "name": "BUFF1_106",
+            "type": "buf",
+            "inputs": [
+                "N351"
+            ],
+            "output": "N420"
+        },
+        {
+            "name": "BUFF1_107",
+            "type": "buf",
+            "inputs": [
+                "N353"
+            ],
+            "output": "N421"
+        },
+        {
+            "name": "BUFF1_108",
+            "type": "buf",
+            "inputs": [
+                "N354"
+            ],
+            "output": "N422"
+        },
+        {
+            "name": "BUFF1_109",
+            "type": "buf",
+            "inputs": [
+                "N356"
+            ],
+            "output": "N423"
+        },
+        {
+            "name": "NOT1_110",
+            "type": "not",
+            "inputs": [
+                "N400"
+            ],
+            "output": "N424"
+        },
+        {
+            "name": "AND2_111",
+            "type": "and",
+            "inputs": [
+                "N404",
+                "N405"
+            ],
+            "output": "N425"
+        },
+        {
+            "name": "AND2_112",
+            "type": "and",
+            "inputs": [
+                "N407",
+                "N408"
+            ],
+            "output": "N426"
+        },
+        {
+            "name": "AND3_113",
+            "type": "and",
+            "inputs": [
+                "N319",
+                "N393",
+                "N55"
+            ],
+            "output": "N427"
+        },
+        {
+            "name": "AND3_114",
+            "type": "and",
+            "inputs": [
+                "N393",
+                "N17",
+                "N287"
+            ],
+            "output": "N432"
+        },
+        {
+            "name": "NAND3_115",
+            "type": "nand",
+            "inputs": [
+                "N393",
+                "N287",
+                "N55"
+            ],
+            "output": "N437"
+        },
+        {
+            "name": "NAND4_116",
+            "type": "nand",
+            "inputs": [
+                "N375",
+                "N59",
+                "N156",
+                "N393"
+            ],
+            "output": "N442"
+        },
+        {
+            "name": "NAND3_117",
+            "type": "nand",
+            "inputs": [
+                "N393",
+                "N319",
+                "N17"
+            ],
+            "output": "N443"
+        },
+        {
+            "name": "AND2_118",
+            "type": "and",
+            "inputs": [
+                "N411",
+                "N412"
+            ],
+            "output": "N444"
+        },
+        {
+            "name": "AND2_119",
+            "type": "and",
+            "inputs": [
+                "N414",
+                "N415"
+            ],
+            "output": "N445"
+        },
+        {
+            "name": "BUFF1_120",
+            "type": "buf",
+            "inputs": [
+                "N392"
+            ],
+            "output": "N446"
+        },
+        {
+            "name": "BUFF1_121",
+            "type": "buf",
+            "inputs": [
+                "N399"
+            ],
+            "output": "N447"
+        },
+        {
+            "name": "BUFF1_122",
+            "type": "buf",
+            "inputs": [
+                "N401"
+            ],
+            "output": "N448"
+        },
+        {
+            "name": "BUFF1_123",
+            "type": "buf",
+            "inputs": [
+                "N402"
+            ],
+            "output": "N449"
+        },
+        {
+            "name": "BUFF1_124",
+            "type": "buf",
+            "inputs": [
+                "N403"
+            ],
+            "output": "N450"
+        },
+        {
+            "name": "NOT1_125",
+            "type": "not",
+            "inputs": [
+                "N424"
+            ],
+            "output": "N451"
+        },
+        {
+            "name": "NOR2_126",
+            "type": "nor",
+            "inputs": [
+                "N406",
+                "N425"
+            ],
+            "output": "N460"
+        },
+        {
+            "name": "NOR2_127",
+            "type": "nor",
+            "inputs": [
+                "N409",
+                "N426"
+            ],
+            "output": "N463"
+        },
+        {
+            "name": "NAND2_128",
+            "type": "nand",
+            "inputs": [
+                "N442",
+                "N410"
+            ],
+            "output": "N466"
+        },
+        {
+            "name": "AND2_129",
+            "type": "and",
+            "inputs": [
+                "N143",
+                "N427"
+            ],
+            "output": "N475"
+        },
+        {
+            "name": "AND2_130",
+            "type": "and",
+            "inputs": [
+                "N310",
+                "N432"
+            ],
+            "output": "N476"
+        },
+        {
+            "name": "AND2_131",
+            "type": "and",
+            "inputs": [
+                "N146",
+                "N427"
+            ],
+            "output": "N477"
+        },
+        {
+            "name": "AND2_132",
+            "type": "and",
+            "inputs": [
+                "N310",
+                "N432"
+            ],
+            "output": "N478"
+        },
+        {
+            "name": "AND2_133",
+            "type": "and",
+            "inputs": [
+                "N149",
+                "N427"
+            ],
+            "output": "N479"
+        },
+        {
+            "name": "AND2_134",
+            "type": "and",
+            "inputs": [
+                "N310",
+                "N432"
+            ],
+            "output": "N480"
+        },
+        {
+            "name": "AND2_135",
+            "type": "and",
+            "inputs": [
+                "N153",
+                "N427"
+            ],
+            "output": "N481"
+        },
+        {
+            "name": "AND2_136",
+            "type": "and",
+            "inputs": [
+                "N310",
+                "N432"
+            ],
+            "output": "N482"
+        },
+        {
+            "name": "NAND2_137",
+            "type": "nand",
+            "inputs": [
+                "N443",
+                "N1"
+            ],
+            "output": "N483"
+        },
+        {
+            "name": "OR2_138",
+            "type": "or",
+            "inputs": [
+                "N369",
+                "N437"
+            ],
+            "output": "N488"
+        },
+        {
+            "name": "OR2_139",
+            "type": "or",
+            "inputs": [
+                "N369",
+                "N437"
+            ],
+            "output": "N489"
+        },
+        {
+            "name": "OR2_140",
+            "type": "or",
+            "inputs": [
+                "N369",
+                "N437"
+            ],
+            "output": "N490"
+        },
+        {
+            "name": "OR2_141",
+            "type": "or",
+            "inputs": [
+                "N369",
+                "N437"
+            ],
+            "output": "N491"
+        },
+        {
+            "name": "NOR2_142",
+            "type": "nor",
+            "inputs": [
+                "N413",
+                "N444"
+            ],
+            "output": "N492"
+        },
+        {
+            "name": "NOR2_143",
+            "type": "nor",
+            "inputs": [
+                "N416",
+                "N445"
+            ],
+            "output": "N495"
+        },
+        {
+            "name": "NAND2_144",
+            "type": "nand",
+            "inputs": [
+                "N130",
+                "N460"
+            ],
+            "output": "N498"
+        },
+        {
+            "name": "OR2_145",
+            "type": "or",
+            "inputs": [
+                "N130",
+                "N460"
+            ],
+            "output": "N499"
+        },
+        {
+            "name": "NAND2_146",
+            "type": "nand",
+            "inputs": [
+                "N463",
+                "N135"
+            ],
+            "output": "N500"
+        },
+        {
+            "name": "OR2_147",
+            "type": "or",
+            "inputs": [
+                "N463",
+                "N135"
+            ],
+            "output": "N501"
+        },
+        {
+            "name": "AND2_148",
+            "type": "and",
+            "inputs": [
+                "N91",
+                "N466"
+            ],
+            "output": "N502"
+        },
+        {
+            "name": "NOR2_149",
+            "type": "nor",
+            "inputs": [
+                "N475",
+                "N476"
+            ],
+            "output": "N503"
+        },
+        {
+            "name": "AND2_150",
+            "type": "and",
+            "inputs": [
+                "N96",
+                "N466"
+            ],
+            "output": "N504"
+        },
+        {
+            "name": "NOR2_151",
+            "type": "nor",
+            "inputs": [
+                "N477",
+                "N478"
+            ],
+            "output": "N505"
+        },
+        {
+            "name": "AND2_152",
+            "type": "and",
+            "inputs": [
+                "N101",
+                "N466"
+            ],
+            "output": "N506"
+        },
+        {
+            "name": "NOR2_153",
+            "type": "nor",
+            "inputs": [
+                "N479",
+                "N480"
+            ],
+            "output": "N507"
+        },
+        {
+            "name": "AND2_154",
+            "type": "and",
+            "inputs": [
+                "N106",
+                "N466"
+            ],
+            "output": "N508"
+        },
+        {
+            "name": "NOR2_155",
+            "type": "nor",
+            "inputs": [
+                "N481",
+                "N482"
+            ],
+            "output": "N509"
+        },
+        {
+            "name": "AND2_156",
+            "type": "and",
+            "inputs": [
+                "N143",
+                "N483"
+            ],
+            "output": "N510"
+        },
+        {
+            "name": "AND2_157",
+            "type": "and",
+            "inputs": [
+                "N111",
+                "N466"
+            ],
+            "output": "N511"
+        },
+        {
+            "name": "AND2_158",
+            "type": "and",
+            "inputs": [
+                "N146",
+                "N483"
+            ],
+            "output": "N512"
+        },
+        {
+            "name": "AND2_159",
+            "type": "and",
+            "inputs": [
+                "N116",
+                "N466"
+            ],
+            "output": "N513"
+        },
+        {
+            "name": "AND2_160",
+            "type": "and",
+            "inputs": [
+                "N149",
+                "N483"
+            ],
+            "output": "N514"
+        },
+        {
+            "name": "AND2_161",
+            "type": "and",
+            "inputs": [
+                "N121",
+                "N466"
+            ],
+            "output": "N515"
+        },
+        {
+            "name": "AND2_162",
+            "type": "and",
+            "inputs": [
+                "N153",
+                "N483"
+            ],
+            "output": "N516"
+        },
+        {
+            "name": "AND2_163",
+            "type": "and",
+            "inputs": [
+                "N126",
+                "N466"
+            ],
+            "output": "N517"
+        },
+        {
+            "name": "NAND2_164",
+            "type": "nand",
+            "inputs": [
+                "N130",
+                "N492"
+            ],
+            "output": "N518"
+        },
+        {
+            "name": "OR2_165",
+            "type": "or",
+            "inputs": [
+                "N130",
+                "N492"
+            ],
+            "output": "N519"
+        },
+        {
+            "name": "NAND2_166",
+            "type": "nand",
+            "inputs": [
+                "N495",
+                "N207"
+            ],
+            "output": "N520"
+        },
+        {
+            "name": "OR2_167",
+            "type": "or",
+            "inputs": [
+                "N495",
+                "N207"
+            ],
+            "output": "N521"
+        },
+        {
+            "name": "AND2_168",
+            "type": "and",
+            "inputs": [
+                "N451",
+                "N159"
+            ],
+            "output": "N522"
+        },
+        {
+            "name": "AND2_169",
+            "type": "and",
+            "inputs": [
+                "N451",
+                "N165"
+            ],
+            "output": "N523"
+        },
+        {
+            "name": "AND2_170",
+            "type": "and",
+            "inputs": [
+                "N451",
+                "N171"
+            ],
+            "output": "N524"
+        },
+        {
+            "name": "AND2_171",
+            "type": "and",
+            "inputs": [
+                "N451",
+                "N177"
+            ],
+            "output": "N525"
+        },
+        {
+            "name": "AND2_172",
+            "type": "and",
+            "inputs": [
+                "N451",
+                "N183"
+            ],
+            "output": "N526"
+        },
+        {
+            "name": "NAND2_173",
+            "type": "nand",
+            "inputs": [
+                "N451",
+                "N189"
+            ],
+            "output": "N527"
+        },
+        {
+            "name": "NAND2_174",
+            "type": "nand",
+            "inputs": [
+                "N451",
+                "N195"
+            ],
+            "output": "N528"
+        },
+        {
+            "name": "NAND2_175",
+            "type": "nand",
+            "inputs": [
+                "N451",
+                "N201"
+            ],
+            "output": "N529"
+        },
+        {
+            "name": "NAND2_176",
+            "type": "nand",
+            "inputs": [
+                "N498",
+                "N499"
+            ],
+            "output": "N530"
+        },
+        {
+            "name": "NAND2_177",
+            "type": "nand",
+            "inputs": [
+                "N500",
+                "N501"
+            ],
+            "output": "N533"
+        },
+        {
+            "name": "NOR2_178",
+            "type": "nor",
+            "inputs": [
+                "N309",
+                "N502"
+            ],
+            "output": "N536"
+        },
+        {
+            "name": "NOR2_179",
+            "type": "nor",
+            "inputs": [
+                "N316",
+                "N504"
+            ],
+            "output": "N537"
+        },
+        {
+            "name": "NOR2_180",
+            "type": "nor",
+            "inputs": [
+                "N317",
+                "N506"
+            ],
+            "output": "N538"
+        },
+        {
+            "name": "NOR2_181",
+            "type": "nor",
+            "inputs": [
+                "N318",
+                "N508"
+            ],
+            "output": "N539"
+        },
+        {
+            "name": "NOR2_182",
+            "type": "nor",
+            "inputs": [
+                "N510",
+                "N511"
+            ],
+            "output": "N540"
+        },
+        {
+            "name": "NOR2_183",
+            "type": "nor",
+            "inputs": [
+                "N512",
+                "N513"
+            ],
+            "output": "N541"
+        },
+        {
+            "name": "NOR2_184",
+            "type": "nor",
+            "inputs": [
+                "N514",
+                "N515"
+            ],
+            "output": "N542"
+        },
+        {
+            "name": "NOR2_185",
+            "type": "nor",
+            "inputs": [
+                "N516",
+                "N517"
+            ],
+            "output": "N543"
+        },
+        {
+            "name": "NAND2_186",
+            "type": "nand",
+            "inputs": [
+                "N518",
+                "N519"
+            ],
+            "output": "N544"
+        },
+        {
+            "name": "NAND2_187",
+            "type": "nand",
+            "inputs": [
+                "N520",
+                "N521"
+            ],
+            "output": "N547"
+        },
+        {
+            "name": "NOT1_188",
+            "type": "not",
+            "inputs": [
+                "N530"
+            ],
+            "output": "N550"
+        },
+        {
+            "name": "NOT1_189",
+            "type": "not",
+            "inputs": [
+                "N533"
+            ],
+            "output": "N551"
+        },
+        {
+            "name": "AND2_190",
+            "type": "and",
+            "inputs": [
+                "N530",
+                "N533"
+            ],
+            "output": "N552"
+        },
+        {
+            "name": "NAND2_191",
+            "type": "nand",
+            "inputs": [
+                "N536",
+                "N503"
+            ],
+            "output": "N553"
+        },
+        {
+            "name": "NAND2_192",
+            "type": "nand",
+            "inputs": [
+                "N537",
+                "N505"
+            ],
+            "output": "N557"
+        },
+        {
+            "name": "NAND2_193",
+            "type": "nand",
+            "inputs": [
+                "N538",
+                "N507"
+            ],
+            "output": "N561"
+        },
+        {
+            "name": "NAND2_194",
+            "type": "nand",
+            "inputs": [
+                "N539",
+                "N509"
+            ],
+            "output": "N565"
+        },
+        {
+            "name": "NAND2_195",
+            "type": "nand",
+            "inputs": [
+                "N488",
+                "N540"
+            ],
+            "output": "N569"
+        },
+        {
+            "name": "NAND2_196",
+            "type": "nand",
+            "inputs": [
+                "N489",
+                "N541"
+            ],
+            "output": "N573"
+        },
+        {
+            "name": "NAND2_197",
+            "type": "nand",
+            "inputs": [
+                "N490",
+                "N542"
+            ],
+            "output": "N577"
+        },
+        {
+            "name": "NAND2_198",
+            "type": "nand",
+            "inputs": [
+                "N491",
+                "N543"
+            ],
+            "output": "N581"
+        },
+        {
+            "name": "NOT1_199",
+            "type": "not",
+            "inputs": [
+                "N544"
+            ],
+            "output": "N585"
+        },
+        {
+            "name": "NOT1_200",
+            "type": "not",
+            "inputs": [
+                "N547"
+            ],
+            "output": "N586"
+        },
+        {
+            "name": "AND2_201",
+            "type": "and",
+            "inputs": [
+                "N544",
+                "N547"
+            ],
+            "output": "N587"
+        },
+        {
+            "name": "AND2_202",
+            "type": "and",
+            "inputs": [
+                "N550",
+                "N551"
+            ],
+            "output": "N588"
+        },
+        {
+            "name": "AND2_203",
+            "type": "and",
+            "inputs": [
+                "N585",
+                "N586"
+            ],
+            "output": "N589"
+        },
+        {
+            "name": "NAND2_204",
+            "type": "nand",
+            "inputs": [
+                "N553",
+                "N159"
+            ],
+            "output": "N590"
+        },
+        {
+            "name": "OR2_205",
+            "type": "or",
+            "inputs": [
+                "N553",
+                "N159"
+            ],
+            "output": "N593"
+        },
+        {
+            "name": "AND2_206",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N553"
+            ],
+            "output": "N596"
+        },
+        {
+            "name": "NAND2_207",
+            "type": "nand",
+            "inputs": [
+                "N557",
+                "N165"
+            ],
+            "output": "N597"
+        },
+        {
+            "name": "OR2_208",
+            "type": "or",
+            "inputs": [
+                "N557",
+                "N165"
+            ],
+            "output": "N600"
+        },
+        {
+            "name": "AND2_209",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N557"
+            ],
+            "output": "N605"
+        },
+        {
+            "name": "NAND2_210",
+            "type": "nand",
+            "inputs": [
+                "N561",
+                "N171"
+            ],
+            "output": "N606"
+        },
+        {
+            "name": "OR2_211",
+            "type": "or",
+            "inputs": [
+                "N561",
+                "N171"
+            ],
+            "output": "N609"
+        },
+        {
+            "name": "AND2_212",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N561"
+            ],
+            "output": "N615"
+        },
+        {
+            "name": "NAND2_213",
+            "type": "nand",
+            "inputs": [
+                "N565",
+                "N177"
+            ],
+            "output": "N616"
+        },
+        {
+            "name": "OR2_214",
+            "type": "or",
+            "inputs": [
+                "N565",
+                "N177"
+            ],
+            "output": "N619"
+        },
+        {
+            "name": "AND2_215",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N565"
+            ],
+            "output": "N624"
+        },
+        {
+            "name": "NAND2_216",
+            "type": "nand",
+            "inputs": [
+                "N569",
+                "N183"
+            ],
+            "output": "N625"
+        },
+        {
+            "name": "OR2_217",
+            "type": "or",
+            "inputs": [
+                "N569",
+                "N183"
+            ],
+            "output": "N628"
+        },
+        {
+            "name": "AND2_218",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N569"
+            ],
+            "output": "N631"
+        },
+        {
+            "name": "NAND2_219",
+            "type": "nand",
+            "inputs": [
+                "N573",
+                "N189"
+            ],
+            "output": "N632"
+        },
+        {
+            "name": "OR2_220",
+            "type": "or",
+            "inputs": [
+                "N573",
+                "N189"
+            ],
+            "output": "N635"
+        },
+        {
+            "name": "AND2_221",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N573"
+            ],
+            "output": "N640"
+        },
+        {
+            "name": "NAND2_222",
+            "type": "nand",
+            "inputs": [
+                "N577",
+                "N195"
+            ],
+            "output": "N641"
+        },
+        {
+            "name": "OR2_223",
+            "type": "or",
+            "inputs": [
+                "N577",
+                "N195"
+            ],
+            "output": "N644"
+        },
+        {
+            "name": "AND2_224",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N577"
+            ],
+            "output": "N650"
+        },
+        {
+            "name": "NAND2_225",
+            "type": "nand",
+            "inputs": [
+                "N581",
+                "N201"
+            ],
+            "output": "N651"
+        },
+        {
+            "name": "OR2_226",
+            "type": "or",
+            "inputs": [
+                "N581",
+                "N201"
+            ],
+            "output": "N654"
+        },
+        {
+            "name": "AND2_227",
+            "type": "and",
+            "inputs": [
+                "N246",
+                "N581"
+            ],
+            "output": "N659"
+        },
+        {
+            "name": "NOR2_228",
+            "type": "nor",
+            "inputs": [
+                "N552",
+                "N588"
+            ],
+            "output": "N660"
+        },
+        {
+            "name": "NOR2_229",
+            "type": "nor",
+            "inputs": [
+                "N587",
+                "N589"
+            ],
+            "output": "N661"
+        },
+        {
+            "name": "NOT1_230",
+            "type": "not",
+            "inputs": [
+                "N590"
+            ],
+            "output": "N662"
+        },
+        {
+            "name": "AND2_231",
+            "type": "and",
+            "inputs": [
+                "N593",
+                "N590"
+            ],
+            "output": "N665"
+        },
+        {
+            "name": "NOR2_232",
+            "type": "nor",
+            "inputs": [
+                "N596",
+                "N522"
+            ],
+            "output": "N669"
+        },
+        {
+            "name": "NOT1_233",
+            "type": "not",
+            "inputs": [
+                "N597"
+            ],
+            "output": "N670"
+        },
+        {
+            "name": "AND2_234",
+            "type": "and",
+            "inputs": [
+                "N600",
+                "N597"
+            ],
+            "output": "N673"
+        },
+        {
+            "name": "NOR2_235",
+            "type": "nor",
+            "inputs": [
+                "N605",
+                "N523"
+            ],
+            "output": "N677"
+        },
+        {
+            "name": "NOT1_236",
+            "type": "not",
+            "inputs": [
+                "N606"
+            ],
+            "output": "N678"
+        },
+        {
+            "name": "AND2_237",
+            "type": "and",
+            "inputs": [
+                "N609",
+                "N606"
+            ],
+            "output": "N682"
+        },
+        {
+            "name": "NOR2_238",
+            "type": "nor",
+            "inputs": [
+                "N615",
+                "N524"
+            ],
+            "output": "N686"
+        },
+        {
+            "name": "NOT1_239",
+            "type": "not",
+            "inputs": [
+                "N616"
+            ],
+            "output": "N687"
+        },
+        {
+            "name": "AND2_240",
+            "type": "and",
+            "inputs": [
+                "N619",
+                "N616"
+            ],
+            "output": "N692"
+        },
+        {
+            "name": "NOR2_241",
+            "type": "nor",
+            "inputs": [
+                "N624",
+                "N525"
+            ],
+            "output": "N696"
+        },
+        {
+            "name": "NOT1_242",
+            "type": "not",
+            "inputs": [
+                "N625"
+            ],
+            "output": "N697"
+        },
+        {
+            "name": "AND2_243",
+            "type": "and",
+            "inputs": [
+                "N628",
+                "N625"
+            ],
+            "output": "N700"
+        },
+        {
+            "name": "NOR2_244",
+            "type": "nor",
+            "inputs": [
+                "N631",
+                "N526"
+            ],
+            "output": "N704"
+        },
+        {
+            "name": "NOT1_245",
+            "type": "not",
+            "inputs": [
+                "N632"
+            ],
+            "output": "N705"
+        },
+        {
+            "name": "AND2_246",
+            "type": "and",
+            "inputs": [
+                "N635",
+                "N632"
+            ],
+            "output": "N708"
+        },
+        {
+            "name": "NOR2_247",
+            "type": "nor",
+            "inputs": [
+                "N337",
+                "N640"
+            ],
+            "output": "N712"
+        },
+        {
+            "name": "NOT1_248",
+            "type": "not",
+            "inputs": [
+                "N641"
+            ],
+            "output": "N713"
+        },
+        {
+            "name": "AND2_249",
+            "type": "and",
+            "inputs": [
+                "N644",
+                "N641"
+            ],
+            "output": "N717"
+        },
+        {
+            "name": "NOR2_250",
+            "type": "nor",
+            "inputs": [
+                "N339",
+                "N650"
+            ],
+            "output": "N721"
+        },
+        {
+            "name": "NOT1_251",
+            "type": "not",
+            "inputs": [
+                "N651"
+            ],
+            "output": "N722"
+        },
+        {
+            "name": "AND2_252",
+            "type": "and",
+            "inputs": [
+                "N654",
+                "N651"
+            ],
+            "output": "N727"
+        },
+        {
+            "name": "NOR2_253",
+            "type": "nor",
+            "inputs": [
+                "N341",
+                "N659"
+            ],
+            "output": "N731"
+        },
+        {
+            "name": "NAND2_254",
+            "type": "nand",
+            "inputs": [
+                "N654",
+                "N261"
+            ],
+            "output": "N732"
+        },
+        {
+            "name": "NAND3_255",
+            "type": "nand",
+            "inputs": [
+                "N644",
+                "N654",
+                "N261"
+            ],
+            "output": "N733"
+        },
+        {
+            "name": "NAND4_256",
+            "type": "nand",
+            "inputs": [
+                "N635",
+                "N644",
+                "N654",
+                "N261"
+            ],
+            "output": "N734"
+        },
+        {
+            "name": "NOT1_257",
+            "type": "not",
+            "inputs": [
+                "N662"
+            ],
+            "output": "N735"
+        },
+        {
+            "name": "AND2_258",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N665"
+            ],
+            "output": "N736"
+        },
+        {
+            "name": "AND2_259",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N662"
+            ],
+            "output": "N737"
+        },
+        {
+            "name": "NOT1_260",
+            "type": "not",
+            "inputs": [
+                "N670"
+            ],
+            "output": "N738"
+        },
+        {
+            "name": "AND2_261",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N673"
+            ],
+            "output": "N739"
+        },
+        {
+            "name": "AND2_262",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N670"
+            ],
+            "output": "N740"
+        },
+        {
+            "name": "NOT1_263",
+            "type": "not",
+            "inputs": [
+                "N678"
+            ],
+            "output": "N741"
+        },
+        {
+            "name": "AND2_264",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N682"
+            ],
+            "output": "N742"
+        },
+        {
+            "name": "AND2_265",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N678"
+            ],
+            "output": "N743"
+        },
+        {
+            "name": "NOT1_266",
+            "type": "not",
+            "inputs": [
+                "N687"
+            ],
+            "output": "N744"
+        },
+        {
+            "name": "AND2_267",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N692"
+            ],
+            "output": "N745"
+        },
+        {
+            "name": "AND2_268",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N687"
+            ],
+            "output": "N746"
+        },
+        {
+            "name": "NOT1_269",
+            "type": "not",
+            "inputs": [
+                "N697"
+            ],
+            "output": "N747"
+        },
+        {
+            "name": "AND2_270",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N700"
+            ],
+            "output": "N748"
+        },
+        {
+            "name": "AND2_271",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N697"
+            ],
+            "output": "N749"
+        },
+        {
+            "name": "NOT1_272",
+            "type": "not",
+            "inputs": [
+                "N705"
+            ],
+            "output": "N750"
+        },
+        {
+            "name": "AND2_273",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N708"
+            ],
+            "output": "N751"
+        },
+        {
+            "name": "AND2_274",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N705"
+            ],
+            "output": "N752"
+        },
+        {
+            "name": "NOT1_275",
+            "type": "not",
+            "inputs": [
+                "N713"
+            ],
+            "output": "N753"
+        },
+        {
+            "name": "AND2_276",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N717"
+            ],
+            "output": "N754"
+        },
+        {
+            "name": "AND2_277",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N713"
+            ],
+            "output": "N755"
+        },
+        {
+            "name": "NOT1_278",
+            "type": "not",
+            "inputs": [
+                "N722"
+            ],
+            "output": "N756"
+        },
+        {
+            "name": "NOR2_279",
+            "type": "nor",
+            "inputs": [
+                "N727",
+                "N261"
+            ],
+            "output": "N757"
+        },
+        {
+            "name": "AND2_280",
+            "type": "and",
+            "inputs": [
+                "N727",
+                "N261"
+            ],
+            "output": "N758"
+        },
+        {
+            "name": "AND2_281",
+            "type": "and",
+            "inputs": [
+                "N228",
+                "N727"
+            ],
+            "output": "N759"
+        },
+        {
+            "name": "AND2_282",
+            "type": "and",
+            "inputs": [
+                "N237",
+                "N722"
+            ],
+            "output": "N760"
+        },
+        {
+            "name": "NAND2_283",
+            "type": "nand",
+            "inputs": [
+                "N644",
+                "N722"
+            ],
+            "output": "N761"
+        },
+        {
+            "name": "NAND2_284",
+            "type": "nand",
+            "inputs": [
+                "N635",
+                "N713"
+            ],
+            "output": "N762"
+        },
+        {
+            "name": "NAND3_285",
+            "type": "nand",
+            "inputs": [
+                "N635",
+                "N644",
+                "N722"
+            ],
+            "output": "N763"
+        },
+        {
+            "name": "NAND2_286",
+            "type": "nand",
+            "inputs": [
+                "N609",
+                "N687"
+            ],
+            "output": "N764"
+        },
+        {
+            "name": "NAND2_287",
+            "type": "nand",
+            "inputs": [
+                "N600",
+                "N678"
+            ],
+            "output": "N765"
+        },
+        {
+            "name": "NAND3_288",
+            "type": "nand",
+            "inputs": [
+                "N600",
+                "N609",
+                "N687"
+            ],
+            "output": "N766"
+        },
+        {
+            "name": "BUFF1_289",
+            "type": "buf",
+            "inputs": [
+                "N660"
+            ],
+            "output": "N767"
+        },
+        {
+            "name": "BUFF1_290",
+            "type": "buf",
+            "inputs": [
+                "N661"
+            ],
+            "output": "N768"
+        },
+        {
+            "name": "NOR2_291",
+            "type": "nor",
+            "inputs": [
+                "N736",
+                "N737"
+            ],
+            "output": "N769"
+        },
+        {
+            "name": "NOR2_292",
+            "type": "nor",
+            "inputs": [
+                "N739",
+                "N740"
+            ],
+            "output": "N770"
+        },
+        {
+            "name": "NOR2_293",
+            "type": "nor",
+            "inputs": [
+                "N742",
+                "N743"
+            ],
+            "output": "N771"
+        },
+        {
+            "name": "NOR2_294",
+            "type": "nor",
+            "inputs": [
+                "N745",
+                "N746"
+            ],
+            "output": "N772"
+        },
+        {
+            "name": "NAND4_295",
+            "type": "nand",
+            "inputs": [
+                "N750",
+                "N762",
+                "N763",
+                "N734"
+            ],
+            "output": "N773"
+        },
+        {
+            "name": "NOR2_296",
+            "type": "nor",
+            "inputs": [
+                "N748",
+                "N749"
+            ],
+            "output": "N777"
+        },
+        {
+            "name": "NAND3_297",
+            "type": "nand",
+            "inputs": [
+                "N753",
+                "N761",
+                "N733"
+            ],
+            "output": "N778"
+        },
+        {
+            "name": "NOR2_298",
+            "type": "nor",
+            "inputs": [
+                "N751",
+                "N752"
+            ],
+            "output": "N781"
+        },
+        {
+            "name": "NAND2_299",
+            "type": "nand",
+            "inputs": [
+                "N756",
+                "N732"
+            ],
+            "output": "N782"
+        },
+        {
+            "name": "NOR2_300",
+            "type": "nor",
+            "inputs": [
+                "N754",
+                "N755"
+            ],
+            "output": "N785"
+        },
+        {
+            "name": "NOR2_301",
+            "type": "nor",
+            "inputs": [
+                "N757",
+                "N758"
+            ],
+            "output": "N786"
+        },
+        {
+            "name": "NOR2_302",
+            "type": "nor",
+            "inputs": [
+                "N759",
+                "N760"
+            ],
+            "output": "N787"
+        },
+        {
+            "name": "NOR2_303",
+            "type": "nor",
+            "inputs": [
+                "N700",
+                "N773"
+            ],
+            "output": "N788"
+        },
+        {
+            "name": "AND2_304",
+            "type": "and",
+            "inputs": [
+                "N700",
+                "N773"
+            ],
+            "output": "N789"
+        },
+        {
+            "name": "NOR2_305",
+            "type": "nor",
+            "inputs": [
+                "N708",
+                "N778"
+            ],
+            "output": "N790"
+        },
+        {
+            "name": "AND2_306",
+            "type": "and",
+            "inputs": [
+                "N708",
+                "N778"
+            ],
+            "output": "N791"
+        },
+        {
+            "name": "NOR2_307",
+            "type": "nor",
+            "inputs": [
+                "N717",
+                "N782"
+            ],
+            "output": "N792"
+        },
+        {
+            "name": "AND2_308",
+            "type": "and",
+            "inputs": [
+                "N717",
+                "N782"
+            ],
+            "output": "N793"
+        },
+        {
+            "name": "AND2_309",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N786"
+            ],
+            "output": "N794"
+        },
+        {
+            "name": "NAND2_310",
+            "type": "nand",
+            "inputs": [
+                "N628",
+                "N773"
+            ],
+            "output": "N795"
+        },
+        {
+            "name": "NAND2_311",
+            "type": "nand",
+            "inputs": [
+                "N795",
+                "N747"
+            ],
+            "output": "N796"
+        },
+        {
+            "name": "NOR2_312",
+            "type": "nor",
+            "inputs": [
+                "N788",
+                "N789"
+            ],
+            "output": "N802"
+        },
+        {
+            "name": "NOR2_313",
+            "type": "nor",
+            "inputs": [
+                "N790",
+                "N791"
+            ],
+            "output": "N803"
+        },
+        {
+            "name": "NOR2_314",
+            "type": "nor",
+            "inputs": [
+                "N792",
+                "N793"
+            ],
+            "output": "N804"
+        },
+        {
+            "name": "NOR2_315",
+            "type": "nor",
+            "inputs": [
+                "N340",
+                "N794"
+            ],
+            "output": "N805"
+        },
+        {
+            "name": "NOR2_316",
+            "type": "nor",
+            "inputs": [
+                "N692",
+                "N796"
+            ],
+            "output": "N806"
+        },
+        {
+            "name": "AND2_317",
+            "type": "and",
+            "inputs": [
+                "N692",
+                "N796"
+            ],
+            "output": "N807"
+        },
+        {
+            "name": "AND2_318",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N802"
+            ],
+            "output": "N808"
+        },
+        {
+            "name": "AND2_319",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N803"
+            ],
+            "output": "N809"
+        },
+        {
+            "name": "AND2_320",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N804"
+            ],
+            "output": "N810"
+        },
+        {
+            "name": "NAND4_321",
+            "type": "nand",
+            "inputs": [
+                "N805",
+                "N787",
+                "N731",
+                "N529"
+            ],
+            "output": "N811"
+        },
+        {
+            "name": "NAND2_322",
+            "type": "nand",
+            "inputs": [
+                "N619",
+                "N796"
+            ],
+            "output": "N812"
+        },
+        {
+            "name": "NAND3_323",
+            "type": "nand",
+            "inputs": [
+                "N609",
+                "N619",
+                "N796"
+            ],
+            "output": "N813"
+        },
+        {
+            "name": "NAND4_324",
+            "type": "nand",
+            "inputs": [
+                "N600",
+                "N609",
+                "N619",
+                "N796"
+            ],
+            "output": "N814"
+        },
+        {
+            "name": "NAND4_325",
+            "type": "nand",
+            "inputs": [
+                "N738",
+                "N765",
+                "N766",
+                "N814"
+            ],
+            "output": "N815"
+        },
+        {
+            "name": "NAND3_326",
+            "type": "nand",
+            "inputs": [
+                "N741",
+                "N764",
+                "N813"
+            ],
+            "output": "N819"
+        },
+        {
+            "name": "NAND2_327",
+            "type": "nand",
+            "inputs": [
+                "N744",
+                "N812"
+            ],
+            "output": "N822"
+        },
+        {
+            "name": "NOR2_328",
+            "type": "nor",
+            "inputs": [
+                "N806",
+                "N807"
+            ],
+            "output": "N825"
+        },
+        {
+            "name": "NOR2_329",
+            "type": "nor",
+            "inputs": [
+                "N335",
+                "N808"
+            ],
+            "output": "N826"
+        },
+        {
+            "name": "NOR2_330",
+            "type": "nor",
+            "inputs": [
+                "N336",
+                "N809"
+            ],
+            "output": "N827"
+        },
+        {
+            "name": "NOR2_331",
+            "type": "nor",
+            "inputs": [
+                "N338",
+                "N810"
+            ],
+            "output": "N828"
+        },
+        {
+            "name": "NOT1_332",
+            "type": "not",
+            "inputs": [
+                "N811"
+            ],
+            "output": "N829"
+        },
+        {
+            "name": "NOR2_333",
+            "type": "nor",
+            "inputs": [
+                "N665",
+                "N815"
+            ],
+            "output": "N830"
+        },
+        {
+            "name": "AND2_334",
+            "type": "and",
+            "inputs": [
+                "N665",
+                "N815"
+            ],
+            "output": "N831"
+        },
+        {
+            "name": "NOR2_335",
+            "type": "nor",
+            "inputs": [
+                "N673",
+                "N819"
+            ],
+            "output": "N832"
+        },
+        {
+            "name": "AND2_336",
+            "type": "and",
+            "inputs": [
+                "N673",
+                "N819"
+            ],
+            "output": "N833"
+        },
+        {
+            "name": "NOR2_337",
+            "type": "nor",
+            "inputs": [
+                "N682",
+                "N822"
+            ],
+            "output": "N834"
+        },
+        {
+            "name": "AND2_338",
+            "type": "and",
+            "inputs": [
+                "N682",
+                "N822"
+            ],
+            "output": "N835"
+        },
+        {
+            "name": "AND2_339",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N825"
+            ],
+            "output": "N836"
+        },
+        {
+            "name": "NAND3_340",
+            "type": "nand",
+            "inputs": [
+                "N826",
+                "N777",
+                "N704"
+            ],
+            "output": "N837"
+        },
+        {
+            "name": "NAND4_341",
+            "type": "nand",
+            "inputs": [
+                "N827",
+                "N781",
+                "N712",
+                "N527"
+            ],
+            "output": "N838"
+        },
+        {
+            "name": "NAND4_342",
+            "type": "nand",
+            "inputs": [
+                "N828",
+                "N785",
+                "N721",
+                "N528"
+            ],
+            "output": "N839"
+        },
+        {
+            "name": "NOT1_343",
+            "type": "not",
+            "inputs": [
+                "N829"
+            ],
+            "output": "N840"
+        },
+        {
+            "name": "NAND2_344",
+            "type": "nand",
+            "inputs": [
+                "N815",
+                "N593"
+            ],
+            "output": "N841"
+        },
+        {
+            "name": "NOR2_345",
+            "type": "nor",
+            "inputs": [
+                "N830",
+                "N831"
+            ],
+            "output": "N842"
+        },
+        {
+            "name": "NOR2_346",
+            "type": "nor",
+            "inputs": [
+                "N832",
+                "N833"
+            ],
+            "output": "N843"
+        },
+        {
+            "name": "NOR2_347",
+            "type": "nor",
+            "inputs": [
+                "N834",
+                "N835"
+            ],
+            "output": "N844"
+        },
+        {
+            "name": "NOR2_348",
+            "type": "nor",
+            "inputs": [
+                "N334",
+                "N836"
+            ],
+            "output": "N845"
+        },
+        {
+            "name": "NOT1_349",
+            "type": "not",
+            "inputs": [
+                "N837"
+            ],
+            "output": "N846"
+        },
+        {
+            "name": "NOT1_350",
+            "type": "not",
+            "inputs": [
+                "N838"
+            ],
+            "output": "N847"
+        },
+        {
+            "name": "NOT1_351",
+            "type": "not",
+            "inputs": [
+                "N839"
+            ],
+            "output": "N848"
+        },
+        {
+            "name": "AND2_352",
+            "type": "and",
+            "inputs": [
+                "N735",
+                "N841"
+            ],
+            "output": "N849"
+        },
+        {
+            "name": "BUFF1_353",
+            "type": "buf",
+            "inputs": [
+                "N840"
+            ],
+            "output": "N850"
+        },
+        {
+            "name": "AND2_354",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N842"
+            ],
+            "output": "N851"
+        },
+        {
+            "name": "AND2_355",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N843"
+            ],
+            "output": "N852"
+        },
+        {
+            "name": "AND2_356",
+            "type": "and",
+            "inputs": [
+                "N219",
+                "N844"
+            ],
+            "output": "N853"
+        },
+        {
+            "name": "NAND3_357",
+            "type": "nand",
+            "inputs": [
+                "N845",
+                "N772",
+                "N696"
+            ],
+            "output": "N854"
+        },
+        {
+            "name": "NOT1_358",
+            "type": "not",
+            "inputs": [
+                "N846"
+            ],
+            "output": "N855"
+        },
+        {
+            "name": "NOT1_359",
+            "type": "not",
+            "inputs": [
+                "N847"
+            ],
+            "output": "N856"
+        },
+        {
+            "name": "NOT1_360",
+            "type": "not",
+            "inputs": [
+                "N848"
+            ],
+            "output": "N857"
+        },
+        {
+            "name": "NOT1_361",
+            "type": "not",
+            "inputs": [
+                "N849"
+            ],
+            "output": "N858"
+        },
+        {
+            "name": "NOR2_362",
+            "type": "nor",
+            "inputs": [
+                "N417",
+                "N851"
+            ],
+            "output": "N859"
+        },
+        {
+            "name": "NOR2_363",
+            "type": "nor",
+            "inputs": [
+                "N332",
+                "N852"
+            ],
+            "output": "N860"
+        },
+        {
+            "name": "NOR2_364",
+            "type": "nor",
+            "inputs": [
+                "N333",
+                "N853"
+            ],
+            "output": "N861"
+        },
+        {
+            "name": "NOT1_365",
+            "type": "not",
+            "inputs": [
+                "N854"
+            ],
+            "output": "N862"
+        },
+        {
+            "name": "BUFF1_366",
+            "type": "buf",
+            "inputs": [
+                "N855"
+            ],
+            "output": "N863"
+        },
+        {
+            "name": "BUFF1_367",
+            "type": "buf",
+            "inputs": [
+                "N856"
+            ],
+            "output": "N864"
+        },
+        {
+            "name": "BUFF1_368",
+            "type": "buf",
+            "inputs": [
+                "N857"
+            ],
+            "output": "N865"
+        },
+        {
+            "name": "BUFF1_369",
+            "type": "buf",
+            "inputs": [
+                "N858"
+            ],
+            "output": "N866"
+        },
+        {
+            "name": "NAND3_370",
+            "type": "nand",
+            "inputs": [
+                "N859",
+                "N769",
+                "N669"
+            ],
+            "output": "N867"
+        },
+        {
+            "name": "NAND3_371",
+            "type": "nand",
+            "inputs": [
+                "N860",
+                "N770",
+                "N677"
+            ],
+            "output": "N868"
+        },
+        {
+            "name": "NAND3_372",
+            "type": "nand",
+            "inputs": [
+                "N861",
+                "N771",
+                "N686"
+            ],
+            "output": "N869"
+        },
+        {
+            "name": "NOT1_373",
+            "type": "not",
+            "inputs": [
+                "N862"
+            ],
+            "output": "N870"
+        },
+        {
+            "name": "NOT1_374",
+            "type": "not",
+            "inputs": [
+                "N867"
+            ],
+            "output": "N871"
+        },
+        {
+            "name": "NOT1_375",
+            "type": "not",
+            "inputs": [
+                "N868"
+            ],
+            "output": "N872"
+        },
+        {
+            "name": "NOT1_376",
+            "type": "not",
+            "inputs": [
+                "N869"
+            ],
+            "output": "N873"
+        },
+        {
+            "name": "BUFF1_377",
+            "type": "buf",
+            "inputs": [
+                "N870"
+            ],
+            "output": "N874"
+        },
+        {
+            "name": "NOT1_378",
+            "type": "not",
+            "inputs": [
+                "N871"
+            ],
+            "output": "N875"
+        },
+        {
+            "name": "NOT1_379",
+            "type": "not",
+            "inputs": [
+                "N872"
+            ],
+            "output": "N876"
+        },
+        {
+            "name": "NOT1_380",
+            "type": "not",
+            "inputs": [
+                "N873"
+            ],
+            "output": "N877"
+        },
+        {
+            "name": "BUFF1_381",
+            "type": "buf",
+            "inputs": [
+                "N875"
+            ],
+            "output": "N878"
+        },
+        {
+            "name": "BUFF1_382",
+            "type": "buf",
+            "inputs": [
+                "N876"
+            ],
+            "output": "N879"
+        },
+        {
+            "name": "BUFF1_383",
+            "type": "buf",
+            "inputs": [
+                "N877"
+            ],
+            "output": "N880"
+        }
+    ],
+    "inputs": {
+        "N1": true,
+        "N8": true,
+        "N13": true,
+        "N17": true,
+        "N26": true,
+        "N29": true,
+        "N36": true,
+        "N42": true,
+        "N51": true,
+        "N55": true,
+        "N59": true,
+        "N68": true,
+        "N72": true,
+        "N73": true,
+        "N74": true,
+        "N75": true,
+        "N80": true,
+        "N85": true,
+        "N86": true,
+        "N87": true,
+        "N88": true,
+        "N89": true,
+        "N90": true,
+        "N91": true,
+        "N96": true,
+        "N101": true,
+        "N106": true,
+        "N111": true,
+        "N116": true,
+        "N121": true,
+        "N126": true,
+        "N130": true,
+        "N135": true,
+        "N138": true,
+        "N143": true,
+        "N146": true,
+        "N149": true,
+        "N152": true,
+        "N153": true,
+        "N156": true,
+        "N159": true,
+        "N165": true,
+        "N171": true,
+        "N177": true,
+        "N183": true,
+        "N189": true,
+        "N195": true,
+        "N201": true,
+        "N207": true,
+        "N210": true,
+        "N219": true,
+        "N228": true,
+        "N237": true,
+        "N246": true,
+        "N255": true,
+        "N259": true,
+        "N260": true,
+        "N261": true,
+        "N267": true,
+        "N268": true
+    },
+    "outputs": [
+        "N388",
+        "N389",
+        "N390",
+        "N391",
+        "N418",
+        "N419",
+        "N420",
+        "N421",
+        "N422",
+        "N423",
+        "N446",
+        "N447",
+        "N448",
+        "N449",
+        "N450",
+        "N767",
+        "N768",
+        "N850",
+        "N863",
+        "N864",
+        "N865",
+        "N866",
+        "N874",
+        "N878",
+        "N879",
+        "N880"
+    ],
+    "moduleName": "c880"
+}

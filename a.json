@@ -1,0 +1,81 @@
+{
+    "gates": [
+        {
+            "name": "AND2_1",
+            "type": "and",
+            "inputs": [
+                "N1",
+                "N2"
+            ],
+            "output": "N10"
+        },
+        {
+            "name": "AND2_2",
+            "type": "and",
+            "inputs": [
+                "N3",
+                "N4"
+            ],
+            "output": "N11"
+        },
+        {
+            "name": "AND2_3",
+            "type": "and",
+            "inputs": [
+                "N5",
+                "N6"
+            ],
+            "output": "N12"
+        },
+        {
+            "name": "AND2_4",
+            "type": "and",
+            "inputs": [
+                "N7",
+                "N8"
+            ],
+            "output": "N13"
+        },
+        {
+            "name": "OR2_5",
+            "type": "or",
+            "inputs": [
+                "N10",
+                "N11"
+            ],
+            "output": "N14"
+        },
+        {
+            "name": "OR2_6",
+            "type": "or",
+            "inputs": [
+                "N12",
+                "N13"
+            ],
+            "output": "N15"
+        },
+        {
+            "name": "AND2_5",
+            "type": "and",
+            "inputs": [
+                "N14",
+                "N15"
+            ],
+            "output": "N9"
+        }
+    ],
+    "inputs": {
+        "N1": true,
+        "N2": true,
+        "N3": true,
+        "N4": true,
+        "N5": true,
+        "N6": true,
+        "N7": true,
+        "N8": true
+    },
+    "outputs": [
+        "N9"
+    ],
+    "moduleName": "a"
+}
